@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravindan M - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffffff, #f0f4f8);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #fff;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column; /* Default to column */
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-image {
+            border-radius: 10px;
+            width: 300px; /* Reduced image size */
+            height: 300px; /* Reduced image size */
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem; /* Add space below image on small screens */
+        }
+
+        .header-text {
+            text-align: center; /* Default to center the text */
+        }
+
+        .header-text h1 {
+            font-size: 3rem; /* Increased name size */
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .header-text p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #004e92;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #004e92;
+            padding-bottom: 0.5rem;
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-item {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-item strong {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #004e92;
+        }
+
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #004e92;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            font-size: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+            header {
+                flex-direction: row; /* Arrange image and text side by side */
+                justify-content: flex-center; /* Align to the left */
+            }
+
+            .profile-image {
+                margin-bottom: 0; /* Remove bottom margin */
+                margin-right: 2rem; /* Add space between image and text */
+            }
+
+            .header-text {
+                text-align: left; /* Align text to the left */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Screenshot 2025-01-10 214051.png" alt="Portfolio Screenshot" class="profile-image">
+        <div class="header-text">
+            <h1>Aravindan M</h1>
+            <p>Software Engineer | Full-stack Developer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a passionate software engineer with expertise in full-stack development, seeking opportunities to create impactful software solutions. I thrive in challenging environments that promote learning and innovation.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="card">
+                <div class="card-item">React Native</div>
+                <div class="card-item">Angular</div>
+                <div class="card-item">.NET Core</div>
+                <div class="card-item">SQL</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="card">
+                <div class="card-item">
+                    <strong>Full-stack Developer</strong>
+                    <p>KareInfinity Technologies Pvt. Ltd (Jan 2023 - Present)</p>
+                    <p>Location: India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="card">
+                <div class="card-item">
+                    <strong>Bachelor of Technology (BTech)</strong>
+                    <p>Information Technology</p>
+                    <p>St. Joseph's Institute of Technology (2019 - 2023)</p>
+                </div>
+                <!-- <div class="card-item">
+                    <strong>12th</strong>
+                    <p>Biomaths</p>
+                    <p>John Dewey Matric Higher Secondary School (2018 - 2019)</p>
+                </div>
+                <div class="card-item">
+                    <strong>10th</strong>
+                    <p>John Dewey Matric Higher Secondary School (2015 - 2016)</p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="card contact">
+                <div class="card-item">Address: 35, Valkar Street, Thiruvathigai, Panruti, Cuddalore 607106</div>
+                <div class="card-item">Phone: <a href="tel:+918270612215">+91 8270612215</a></div>
+                <div class="card-item">Email: <a href="mailto:aravindan9302@gmail.com">aravindan9302@gmail.com</a></div>
+                <div class="card-item">LinkedIn: <a href="https://www.linkedin.com/in/aravindan-m-09march2002" target="_blank">linkedin.com/in/aravindan-m</a></div>
+                <!-- <div class="card-item">Portfolio: <a href="https://aravindankumaran.github.io/portfolio/" target="_blank">aravindankumaran.github.io/portfolio/</a></div> -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Aravindan M. All rights reserved.</p>
+    </footer>
+</body>
+</html>
