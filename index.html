@@ -147,7 +147,8 @@
       flex-wrap: wrap;
     }
     
-    .contact-info div {
+    .contact-info div,
+    .contact-info a {
       font-weight: 500;
       color: var(--text);
       display: flex;
@@ -158,9 +159,11 @@
       border-radius: var(--radius-sm);
       font-size: 14px;
       transition: var(--transition);
+      text-decoration: none;
     }
     
-    .contact-info div:hover {
+    .contact-info div:hover,
+    .contact-info a:hover {
       background: white;
       box-shadow: var(--shadow-light);
       transform: translateY(-2px);
@@ -351,7 +354,8 @@
         gap: 12px;
       }
       
-      .contact-info div {
+      .contact-info div,
+      .contact-info a {
         width: 100%;
         justify-content: center;
       }
@@ -380,8 +384,8 @@
         <small>Managing Director & Developer</small>
 
         <div class="contact-info">
-          <div>📧 aravindan@appointza.com</div>
-          <div>📱 +91-9080539126</div>
+          <a href="mailto:aravindan@appointza.com">📧 aravindan@appointza.com</a>
+          <a href="tel:+919080539126">📱 +91-9080539126</a>
           <div>🌐 www.appointza.com</div>
         </div>
 
