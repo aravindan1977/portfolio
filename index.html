@@ -71,7 +71,7 @@
     }
     
     .profile-section {
-      background: var(--bg-gradient);
+      background: var(--bg-light);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -95,13 +95,11 @@
     }
     
     .avatar {
-      width: 200px;
-      height: 200px;
-    
+      width: 240px;
+      height: 240px;
+      border-radius: var(--radius-sm);
       overflow: hidden;
       box-shadow: var(--shadow-light);
-      background: #fff;
-      border: 6px solid white;
       position: relative;
       z-index: 1;
       transition: var(--transition);
@@ -374,7 +372,7 @@
 
     <section class="profile-section">
       <div class="avatar">
-         <img src="Screenshot 2025-01-10 214051.png" alt="Aravindan" /> 
+         <img src="profile.png" alt="Aravindan" /> 
       </div>
 
       <div class="profile-info">
@@ -426,7 +424,7 @@
       <h2>How Appointza Works</h2>
       <p>
         Appointza lets clients view your availability and book appointments online. Once a slot is selected, the system
-        sends automated confirmations and reminders, adds the meeting to both calendars, and provides rescheduling or
+        sends automated confirmations and reminders via WhatsApp, email, and SMS, and provides rescheduling or
         cancellation options — saving time and avoiding back-and-forth communication.
       </p>
       
@@ -440,8 +438,8 @@
           <p>Reduce no-shows with automated email and SMS reminders.</p>
         </div>
         <div class="feature">
-          <h3>📱 Calendar Integration</h3>
-          <p>Syncs with popular calendar apps to avoid double bookings.</p>
+          <h3>💬 WhatsApp Integration</h3>
+          <p>Receive instant notifications and reminders via WhatsApp for better engagement.</p>
         </div>
       </div>
 
